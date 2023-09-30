@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Compressao de Imagem</title>
+</head>
+<body>
+  <input type="file" id="fileInput" accept="image/*" onchange="compressImage()">
+  <div class="image-container">
+    <div>
+      <h2>Imagem Original</h2>
+      <img id="originalImage" src="#" alt="Imagem Original">
+      <p id="originalSize"></p>
+    </div>
+    <div>
+      <h2>Imagem Comprimida</h2>
+      <img id="compressedImage" src="#" alt="Imagem Comprimida">
+      <p id="compressedSize"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.rawgit.com/Donaldcwl/browser-image-compression/2e4b4c9d3c213b1956aa5367f7e6b62de24e670d/dist/browser-image-compression.js"></script>
+
+</body>
