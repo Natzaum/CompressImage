@@ -32,7 +32,7 @@ async function compressImage() {
 async function compress(img) {
   const maxWidth = 800; 
   const maxHeight = 600; 
-  const quality = 1 / 100;
+  const quality = 30 / 100;
 
   const canvas = document.createElement('canvas');
   const context = canvas.getContext('2d');
@@ -80,3 +80,16 @@ function formatBytes(bytes, decimals = 2) {
 
   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
 }
+
+
+const Preparacao = document.querySelector('.preparacao')
+const Preparacaotexto = document.querySelector('.preparacaoTexto')
+
+Preparacao.addEventListener('click', function(){
+  if(Preparacaotexto.style.display === 'none'){
+    Preparacaotexto.style.display = 'block'
+  }
+  else{
+    Preparacaotexto.style.display = 'none'
+  }
+})

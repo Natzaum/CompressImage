@@ -58,3 +58,23 @@ h3 {
 .customFileUpload:focus {
     background-color: #6e73f0;
 }
+
+.compressSteps{
+    margin-left: 4%;
+}
+
+.preparacao{
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.preparacaoTexto{
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    transition: max-height 0.3s ease;
+}
