@@ -63,9 +63,8 @@ h3 {
     margin-left: 4%;
 }
 
-.preparacao{
+.passos{
     width: 200px;
-    border-radius: 5px;
     cursor: pointer;
     margin-bottom: 20px;
     font-weight: 700;
@@ -76,5 +75,4 @@ h3 {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
-    transition: max-height 0.3s ease;
 }
