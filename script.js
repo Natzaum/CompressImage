@@ -82,14 +82,17 @@ function formatBytes(bytes, decimals = 2) {
 }
 
 
-const Preparacao = document.querySelector('.preparacao')
-const Preparacaotexto = document.querySelector('.preparacaoTexto')
+const Expandir = document.querySelectorAll('.expandir');
 
-Preparacao.addEventListener('click', function(){
-  if(Preparacaotexto.style.display === 'none'){
-    Preparacaotexto.style.display = 'block'
-  }
-  else{
-    Preparacaotexto.style.display = 'none'
-  }
-})
+Expandir.forEach(function (button) {
+  button.addEventListener('click', function () {
+    const Passotexto = this.nextElementSibling;
+
+    if (Passotexto.style.display === 'none' || Passotexto.style.display === '') {
+      Passotexto.style.display = 'block';
+    } else {
+      Passotexto.style.display = 'none';
+    }
+  });
+});
+

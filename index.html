@@ -10,7 +10,7 @@
   <div class="pageContainer">
     <div class="compressText">
       <h1>Comprimir imagem</h1>
-      <h3>Comprima sua imagem, e veja todos os passos que foram realizados para chegar na imagem atual</h3>
+      <h3>Comprima sua imagem, e veja todos os passos que foram realizados para chegar a imagem comprimida</h3>
     </div>
 
     <div class="imageSelector">
@@ -37,10 +37,11 @@
 
   <div class="compressStepsFather">
     <div class="compressSteps">
-      <div class="passos preparacao">
+      
+      <div class="passo expandir">
         Preparação da imagem
       </div>
-      <div class="preparacaoTexto">
+      <div class="passoTexto">
         <p>A preparação de imagem é uma fase fundamental no processo de compressão de imagens, 
           onde a imagem original é refinada e ajustada antes de ser comprimida. 
           Isso envolve escolher o formato de arquivo adequado, redimensionar a imagem, 
@@ -51,13 +52,89 @@
           tamanho de arquivo e uso final, e é um passo essencial para o sucesso do processo de compressão.</p>
       </div>
 
-      <div class="segmentacao">
+      <div class="passo expandir">
         Segmentação
       </div>
+      <div class="passoTexto">
+        <p>A segmentação é um processo na compressão de imagens que envolve dividir a imagem em blocos ou segmentos menores, 
+          permitindo o tratamento independente de cada bloco durante a compressão. 
+          Essa abordagem visa explorar a redundância local, onde regiões de pixels próximos tendem a ter características visuais semelhantes. 
+          A segmentação aumenta a eficiência da compressão, uma vez que os algoritmos podem ajustar os parâmetros de compressão de forma mais 
+          precisa para cada bloco, preservando detalhes importantes e reduzindo a perda de qualidade. Após a compressão, os blocos são 
+          recombinados para formar a imagem final, mantendo a percepção visual de continuidade. A escolha do tamanho de bloco é crucial e 
+          depende das características da imagem e do contexto de aplicação.</p>
+          <img src="assets/segmentacao.png">
+      </div>
 
-      <div class="stepOne">
+      <div class="passo expandir">
         Transformação
       </div>
+      <div class="passoTexto">
+        <p>A transformação na compressão de imagens envolve a aplicação de uma transformação matemática, 
+          como a Transformada de Cosine Discreta (DCT), aos valores dos pixels da imagem. Isso converte a 
+          representação espacial da imagem em uma representação de frequência, permitindo uma compressão mais 
+          eficiente. Após a transformação, os coeficientes de frequência são quantizados, codificados e, 
+          na descompressão, revertidos para recuperar uma aproximação dos valores originais dos pixels. 
+          A transformação é fundamental para explorar a redundância na imagem e reduzir o tamanho do arquivo, 
+          mas envolve perda de informações, o que afeta a qualidade da imagem final.</p>
+      </div>
+
+      <div class="passo expandir">
+        Quantização
+      </div>
+      <div class="passoTexto">
+        <p>A quantização é um processo fundamental na compressão de imagens que envolve a redução da 
+          precisão dos valores dos pixels ou coeficientes de frequência, transformando-os em valores discretos. 
+          Isso reduz a quantidade de informação necessária para representar a imagem, levando à compressão. 
+          No entanto, a quantização é um processo com perdas, o que significa que detalhes são descartados, 
+          afetando a qualidade da imagem resultante. O tamanho do passo (intervalo entre valores discretos), a precisão 
+          e a escolha do nível de quantização desempenham um papel crucial no equilíbrio entre compressão e qualidade 
+          na compressão de imagens.</p>
+          <img src="assets/quantizacao.jpg">
+      </div>
+
+      <div class="passo expandir">
+        Codificação
+      </div>
+      <div class="passoTexto">
+        <p>Na compressão de imagens, a codificação é a etapa que segue a quantização e visa representar os valores 
+          quantizados de forma mais compacta e eficiente, reduzindo o tamanho do arquivo de imagem. Isso é feito 
+          através de técnicas de codificação, como Huffman, Run-Length Encoding (RLE), codificação aritmética e outras. 
+          A codificação é essencial para comprimir dados após a quantização, usando tabelas de códigos e atribuições de 
+          códigos a símbolos ou grupos de símbolos. Na descompressão, os códigos são revertidos para recuperar os 
+          valores originais, e a escolha da técnica de codificação e seus parâmetros influenciam a taxa de compressão e 
+          a qualidade da imagem resultante. É importante encontrar um equilíbrio entre a compactação de dados e a 
+          preservação da qualidade visual.</p>
+      </div>
+
+      <div class="passo expandir">
+        Armazenamento/transmissão
+      </div>
+      <div class="passoTexto">
+        <p>No contexto da compressão de imagens, o armazenamento refere-se à maneira de guardar os dados de uma 
+          imagem comprimida em um formato de arquivo específico. Existem diversos formatos, como JPEG, PNG e TIFF, 
+          com características específicas para diferentes usos. Os metadados associados à imagem, como informações 
+          de câmera e localização, podem ser preservados ou removidos durante a compressão. A escolha entre compressão 
+          com ou sem perdas afeta a qualidade e a fidelidade da imagem resultante. A taxa de compressão determina o 
+          grau de redução do tamanho do arquivo, influenciando a percepção de perdas visuais. É essencial equilibrar 
+          a qualidade com a economia de espaço de armazenamento, considerando o uso final da imagem, como impressão de 
+          alta qualidade ou exibição na web.</p>
+      </div>
+
+      <div class="passo expandir">
+        Descompressão
+      </div>
+      <div class="passoTexto">
+        <p>A descompressão é o processo de reverter as transformações, quantizações e codificações realizadas durante 
+          a compressão de imagens, a fim de recuperar uma imagem que se assemelhe à original. Ela é necessária sempre 
+          que se pretende visualizar, editar ou usar uma imagem após a compressão, sendo essencial para a recuperação 
+          dos dados originais e a restauração da qualidade visual. A descompressão é específica para o formato de compressão 
+          de imagem usado e depende das técnicas e algoritmos associados a esse formato. Embora em alguns casos a descompressão 
+          possa ser evitada, como no armazenamento ou transmissão de imagens, ela é fundamental para interações humanas ou 
+          processamento de imagem.</p>
+      </div>
+
+
     </div>
   </div>
 
