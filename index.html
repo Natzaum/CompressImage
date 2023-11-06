@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="style.css">
   <title>Compressao de Imagem</title>
 </head>
 
@@ -23,13 +24,13 @@
     <div class="imageContainer">
       <div>
         <h2>Imagem Original</h2>
-        <img id="originalImage" src="#" alt="Imagem Original">
+        <img id="originalImage">
         <p id="originalSize"></p>
       </div>
 
       <div>
         <h2>Imagem Comprimida</h2>
-        <img id="compressedImage" src="#" alt="Imagem Comprimida">
+        <img id="compressedImage">
         <p id="compressedSize"></p>
       </div>
     </div>
@@ -63,7 +64,7 @@
           precisa para cada bloco, preservando detalhes importantes e reduzindo a perda de qualidade. Após a compressão, os blocos são 
           recombinados para formar a imagem final, mantendo a percepção visual de continuidade. A escolha do tamanho de bloco é crucial e 
           depende das características da imagem e do contexto de aplicação.</p>
-          <img src="assets/segmentacao.png">
+          <img src="https://cdn.glitch.global/3365f6f9-473b-43ea-8a0a-2db14357e610/segmentacao.png?v=1699238420548">
       </div>
 
       <div class="passo expandir">
@@ -90,7 +91,7 @@
           afetando a qualidade da imagem resultante. O tamanho do passo (intervalo entre valores discretos), a precisão 
           e a escolha do nível de quantização desempenham um papel crucial no equilíbrio entre compressão e qualidade 
           na compressão de imagens.</p>
-          <img src="assets/quantizacao.jpg">
+          <img src="https://cdn.glitch.global/3365f6f9-473b-43ea-8a0a-2db14357e610/quantizacao.jpg?v=1699238416274">
       </div>
 
       <div class="passo expandir">
@@ -141,6 +142,5 @@
   <script src="script.js"></script>
   <script
     src="https://cdn.rawgit.com/Donaldcwl/browser-image-compression/2e4b4c9d3c213b1956aa5367f7e6b62de24e670d/dist/browser-image-compression.js"></script>
-  <link rel="stylesheet" href="style.css">
 
 </body>

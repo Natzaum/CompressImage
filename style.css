@@ -72,12 +72,17 @@ h3 {
 
 .passoTexto{
     display: none;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     padding: 10px;
     margin: 10px;
     animation : focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+.imageContainer img {
+    max-height: 500px;
+    max-width: 500px;
+    width: 100%;
+}
 @keyframes focus-in-expand {
     0% {
       letter-spacing: -0.5em;
