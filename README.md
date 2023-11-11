@@ -1,2 +1,2 @@
 # CompressImage
-link do site: https://compressimage.glitch.me/
+link do site: https://compressimage.up.railway.app/
